@@ -1,0 +1,80 @@
+{
+  "categories": [
+    {
+      "name": "Vegetables & Fruits",
+      "subCategories": [
+        {
+          "name": "Vegetables",
+          "info": [
+            {
+              "name": "Cucumber",
+              "color": "#00B121",
+              "options": "Large",
+              "skuId": "SKU02596052",
+              "stocks": 24
+            },
+            {
+              "name": "Green Chilli",
+              "color": "#00B121",
+              "options": "Small",
+              "skuId": "SKU02596053",
+              "stocks": 23
+            },
+            {
+              "name": "Carrot",
+              "color": "#333333",
+              "options": "Medium",
+              "skuId": "SKU02596054",
+              "stocks": 24
+            },
+            {
+              "name": "Potato",
+              "color": "#333333",
+              "options": "Small",
+              "skuId": "SKU02596055",
+              "stocks": "Unlimited"
+            }
+          ]
+        },
+        {
+          "name": "Fruits",
+          "info": [
+            {
+              "name": "Pineapple",
+              "color": "#FFDA00",
+              "options": "Large",
+              "skuId": "SKU02596066",
+              "stocks": "Unlimited"
+            },
+            {
+              "name": "Banana",
+              "color": "#FFDA00",
+              "options": "Small",
+              "skuId": "SKU02596065",
+              "stocks": "Unlimited"
+            },
+            {
+              "name": "Green Apple",
+              "color": "#00B121",
+              "options": "Medium",
+              "skuId": "SKU02596064",
+              "stocks": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Breads & Dairy",
+      "subCategories": []
+    },
+    {
+      "name": "Snacks",
+      "subCategories": []
+    },
+    {
+      "name": "Cleaning and Household",
+      "subCategories": []
+    }
+  ]
+}

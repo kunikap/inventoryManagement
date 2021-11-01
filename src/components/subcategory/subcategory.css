@@ -1,0 +1,11 @@
+.main-wrapper .sub-category {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.data-table {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-collapse: collapse;
+}

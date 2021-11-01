@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +39,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  font-size: 30px;
+  line-height: 48px;
+  margin: 40px 49px;
 }

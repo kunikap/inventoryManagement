@@ -1,0 +1,28 @@
+.inventory-wrapper .search-wrapper {
+    display: flex;
+    gap: 35px 10px;
+}
+
+.search-wrapper .search-icon {
+    position: relative;
+    left: 22px;
+    top: 2px;
+}
+
+.search-wrapper .search-input{
+    height: 40px;
+    width: 281px;
+    border-radius: 20px;
+    background-color: #F3F3F3;
+    border-color: transparent;
+    padding-left: 22px;
+}
+
+.search-wrapper .search-button{
+    height: 40px;
+    width: 80px;
+    background-color: rgba(21,123,249,1);
+    border-radius: 20px;
+    color: #FFFF;
+    border-color: transparent;
+}
