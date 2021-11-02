@@ -14,6 +14,11 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
     const value = event.target.value;
     setIsUnlimited(value);
   };
+
+  const saveModifications = ()=> {
+    onSave(stockValue, skuId);
+    setEditMode(!editMode);
+  }
   return (
     <tr>
       <td>{name}</td>
@@ -46,7 +51,7 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
       {
         <td>
           {editMode ? (
-            <button className="" onClick={setEditMode.bind(this, !editMode)}>
+            <button className="" onClick={saveModifications}>
               {" "}
               <i className="fa fa-save"></i>
             </button>

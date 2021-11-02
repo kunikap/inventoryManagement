@@ -20,6 +20,10 @@ const Maincategory = ({ categories, setData }) => {
     const value = event.target.checked;
     setIsAvailable(value);
   }
+
+  const onSave = (...args)=>{
+    setData(...args)
+  }
   return (
     <div className="data-wrapper">
       {categories &&
@@ -41,7 +45,7 @@ const Maincategory = ({ categories, setData }) => {
             </div>
             {activeTab == name &&
               subCategories.map((subCategory) => (
-                <Subcategory {...subCategory} setData={setData} />
+                <Subcategory {...subCategory} setData={(...args)=> onSave(name, ...args)} />
               ))}
           </div>
         ))}

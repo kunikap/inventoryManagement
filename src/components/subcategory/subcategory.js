@@ -15,6 +15,10 @@ const Subcategory = ({ info, name, setData }) => {
     setIsAvailable(value);
   }
 
+  const onSave = (stocks, skuId)=>{
+    setData(name, stocks, skuId)
+  }
+
   return (
     <div key={name} className="sub-category-outer">
       <div class="sub-category-wrapper">
@@ -33,7 +37,7 @@ const Subcategory = ({ info, name, setData }) => {
       <table className="data-table">
         <tbody>
           {isActive &&
-            info.map((data) => <SubcategoryData {...data} onSave={setData} />)}
+            info.map((data) => <SubcategoryData {...data} onSave={onSave} />)}
         </tbody>
       </table>
     </div>
