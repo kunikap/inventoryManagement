@@ -4,7 +4,6 @@ import Maincategory from "../mainCategory/mainCategory.js";
 import Header from "../header/Header.js";
 import jsonData from "../../data/inventory.json";
 import "./inventory.css";
-import Subcategory from "../subcategory/subcategoryData";
 
 const Inventory = () => {
   const [data, setData] = useState([]);
@@ -33,12 +32,37 @@ const Inventory = () => {
     setData(modified);
     localStorage.setItem("inventory", JSON.stringify(modified));
   };
+
+  const saveIsAvailableOfSubcategory = (subcategoryName, isAvailable)=>{
+    const newData = data.categories.map((category) => {
+        const subCategoryValue = category.subCategories.map((subCategory) => {
+          if (subcategoryName === subCategory.name) {
+            return {...subCategory, isAvailable}
+          } else return subCategory;
+        });
+        return {...category, subCategories: subCategoryValue}
+    });
+    const modified = {categories: newData};
+    setData(modified);
+    localStorage.setItem("inventory", JSON.stringify(modified));
+  }
+
+  const saveIsAvailableOfCategory = (categoryName, isAvailable)=>{
+    const newData = data.categories.map((category) => {
+      if (category.name === categoryName) {
+          return {...category, isAvailable}
+      } else return category;
+    });
+    const modified = {categories: newData};
+    setData(modified);
+    localStorage.setItem("inventory", JSON.stringify(modified));
+  }
   return (
     <div className="inventory-wrapper">
       <Search />
       <div className="main-wrapper">
         <Header />
-        <Maincategory categories={data.categories} setData={onSave} />
+        <Maincategory categories={data.categories} setData={onSave} saveIsAvailableOfCategory={saveIsAvailableOfCategory} saveIsAvailableOfSubcategory={saveIsAvailableOfSubcategory}/>
       </div>
     </div>
   );

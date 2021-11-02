@@ -2,9 +2,11 @@
   "categories": [
     {
       "name": "Vegetables & Fruits",
+      "isAvailable": true,
       "subCategories": [
         {
           "name": "Vegetables",
+          "isAvailable": false,
           "info": [
             {
               "name": "Cucumber",
@@ -66,15 +68,60 @@
     },
     {
       "name": "Breads & Dairy",
-      "subCategories": []
+      "isAvailable": false,
+      "subCategories": [
+        {
+          "name": "Breads",
+          "isAvailable": true,
+          "info": [
+            {
+              "name": "Britania",
+              "color": "#00B121",
+              "options": "Large",
+              "skuId": "SKU02596062",
+              "stocks": 24
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Snacks",
-      "subCategories": []
+      "isAvailable": true,
+      "subCategories": [
+        {
+          "name": "FastFood",
+          "isAvailable": true,
+          "info": [
+            {
+              "name": "Burger",
+              "color": "#00B121",
+              "options": "Large",
+              "skuId": "SKU02596072",
+              "stocks": 24
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Cleaning and Household",
-      "subCategories": []
+      "isAvailable": false,
+      "subCategories": [
+        {
+          "name": "Cleaning",
+          "isAvailable": true,
+          "info": [
+            {
+              "name": "Mop",
+              "color": "#00B121",
+              "options": "Large",
+              "skuId": "SKU02596092",
+              "stocks": 24
+            }
+          ]
+        }
+      ]
     }
   ]
 }
