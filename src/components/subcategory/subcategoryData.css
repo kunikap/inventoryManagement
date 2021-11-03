@@ -10,3 +10,9 @@
     border-bottom: 1px solid #000;
     padding: 13px 0 13px 40px;
 }
+.editBtn{
+  cursor: pointer;
+}
+.saveBtn{
+  cursor: pointer;
+}

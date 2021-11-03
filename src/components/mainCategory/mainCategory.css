@@ -22,6 +22,7 @@
     background-color: #167BF9;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 .right-component{
   display: flex;

@@ -1,6 +1,7 @@
 .inventory-wrapper .search-wrapper {
     display: flex;
     gap: 35px 10px;
+    
 }
 
 .search-wrapper .search-icon {
@@ -16,6 +17,7 @@
     background-color: #F3F3F3;
     border-color: transparent;
     padding-left: 22px;
+    outline-style: none;
 }
 
 .search-wrapper .search-button{
@@ -25,4 +27,6 @@
     border-radius: 20px;
     color: #FFFF;
     border-color: transparent;
+    cursor: pointer;
+   
 }

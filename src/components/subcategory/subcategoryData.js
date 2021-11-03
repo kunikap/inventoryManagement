@@ -80,11 +80,11 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
           {editMode ? (
             <button className="" onClick={saveModifications}>
               {" "}
-              <i className="fa fa-save"></i>
+              <i className=" saveBtn fa fa-save"></i>
             </button>
           ) : (
             <i
-              className="fa fa-edit"
+              className=" editBtn fa fa-edit"
               onClick={setEditMode.bind(this, !editMode)}
             ></i>
           )}
