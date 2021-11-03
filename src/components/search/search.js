@@ -7,6 +7,12 @@ const Search = ({ onSearch }) => {
     const value = event.target.value;
     setSearchTerm(value);
   };
+  const clearSearch = () => {
+    setSearchTerm("")
+  }
+
+
+
   return (
     <div className="search-wrapper">
       <div className="search-bar">
@@ -18,6 +24,9 @@ const Search = ({ onSearch }) => {
           onChange={handleSearch}
           value={searchTerm}
         />
+        {searchTerm && <button className="cross-button" onClick={clearSearch}>
+          <i class="fas fa-times"></i>
+        </button>}
       </div>
       <button
         className="search-button"
