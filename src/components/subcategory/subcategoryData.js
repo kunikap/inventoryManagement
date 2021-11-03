@@ -56,6 +56,7 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
           {editMode ? (
             <div>
               <input
+              className = "stock-input"
                 type="text"
                 value={stockValue}
                 placeholder="Enter value"

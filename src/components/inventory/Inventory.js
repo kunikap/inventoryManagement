@@ -8,8 +8,12 @@ import "./inventory.css";
 const Inventory = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("inventory")) || jsonData;
+    const localStorageValue = JSON.parse(localStorage.getItem("inventory"));
+    const data = localStorageValue || jsonData;
     setData(data);
+    if (!localStorageValue) {
+      localStorage.setItem("inventory", JSON.stringify(data));
+    }
   }, []);
 
   const onSave = (categoryName, subCategoryName, stocks, skuId) => {
@@ -33,7 +37,7 @@ const Inventory = () => {
     localStorage.setItem("inventory", JSON.stringify(modified));
   };
   const onSearch = (searchTerm) => {
-    const dataValue = JSON.parse(localStorage.getItem("inventory"));
+    const dataValue = JSON.parse(localStorage.getItem("inventory")) || data;
     const newData = dataValue.categories.map((category) => {
       const subCategories = category.subCategories.map((subCategory) => {
         const info = subCategory.info.filter(

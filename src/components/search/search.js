@@ -6,9 +6,13 @@ const Search = ({ onSearch }) => {
   const handleSearch = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
+    if (value === "") {
+      onSearch("");
+    }
   };
   const clearSearch = () => {
-    setSearchTerm("")
+    setSearchTerm("");
+    onSearch("");
   }
 
 
