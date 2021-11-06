@@ -18,9 +18,6 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
       setStockValue(value);
       setErrorMessage("");
     }
-    if (value === "" && !isUnlimited) {
-      setErrorMessage("Please enter stock value");
-    }
     if (value === "" && isUnlimited) {
       setStockValue("");
       setErrorMessage("");
@@ -41,9 +38,14 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
   };
 
   const saveModifications = () => {
-    const value = isUnlimited && stockValue === "" ? "Unlimited": stockValue;
-    onSave(value, skuId);
-    setEditMode(!editMode);
+    if(!isUnlimited && stockValue === "") {
+        setErrorMessage("Please enter stock value");
+    } else {
+      const value = isUnlimited && stockValue === "" ? "Unlimited": stockValue;
+      onSave(value, skuId);
+      setEditMode(!editMode);
+    }
+    
   };
   return (
     <tr>
