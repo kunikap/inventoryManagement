@@ -15,6 +15,18 @@
 }
 .saveBtn{
   cursor: pointer;
+  height: 36px;
+    width: 74px;
+    border-radius: 20px;
+    background-color: #157BF9;
+    border: none;
+    outline: transparent;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    
 }
 .stock-input{
   height: 36px;
@@ -23,4 +35,16 @@
   outline-style: none;
   background-color: #F3F3F3;
   border-color: transparent;
+  padding-left: 10px;
+  font-size: 14px;
+  color:#333333;
+  
+}
+.unlimited-checkbox{
+  /* height: 18px;
+  width:18px; */
+}
+.checkbox-wrapper{
+/* display: inline-flex;
+  margin-top:50px; */
 }

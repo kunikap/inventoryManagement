@@ -62,14 +62,17 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
                 placeholder="Enter value"
                 onChange={handleStockInput}
               />
+              
               <input
+               className = "unlimited-checkbox"   
                 type="checkbox"
                 name="stocksValue"
                 value={isUnlimited}
                 onChange={handleUnlimitedChange}
               />
               <label for="stocksValue">Unlimited</label>
-            </div>
+              </div>
+            
           ) : (
             stocks
           )}
@@ -79,9 +82,11 @@ const Subcategory = ({ name, color, options, skuId, stocks, onSave }) => {
       {
         <td>
           {editMode ? (
-            <button className="" onClick={saveModifications}>
+            <button className="saveBtn" onClick={saveModifications}>
               {" "}
-              <i className=" saveBtn fa fa-save"></i>
+                Save
+              <i className = "fa fa-save"></i>
+             
             </button>
           ) : (
             <i
