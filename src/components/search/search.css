@@ -1,0 +1,48 @@
+.inventory-wrapper .search-wrapper {
+  display: flex;
+  gap: 35px 10px;
+}
+
+.search-wrapper .search-icon {
+  position: relative;
+  left: 22px;
+  top: 2px;
+}
+
+.search-wrapper .search-input {
+  height: 40px;
+  width: 281px;
+  border-radius: 20px;
+  background-color: #F3F3F3;
+  border-color: transparent;
+  padding-left: 22px;
+  outline-style: none;
+  position: relative;
+}
+
+.search-wrapper .search-button {
+  height: 40px;
+  width: 80px;
+  background-color: rgba(21, 123, 249, 1);
+  border-radius: 20px;
+  color: #FFFF;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.cross-button {
+  height: 18px;
+  width: 18px;
+  opacity: 0.5;
+  background-color: #565656;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  border: none;
+  outline: transparent;
+  align-items: center;
+  position: absolute;
+  top: 188px;
+  left: 318px;
+  cursor: pointer;
+}

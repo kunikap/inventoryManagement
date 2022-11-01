@@ -1,0 +1,22 @@
+.inventory-wrapper {
+    height: 100vh;
+    padding: 50px;
+    background-color: #e7e7e733;
+}
+
+.inventory-wrapper .main-wrapper {
+    margin-top: 35px;
+    padding-bottom: 31px;
+}
+
+.inventory-wrapper .table-wrapper {
+    width: 100%;
+}
+
+.table-wrapper th {
+    color: #A9B1C3;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.09px;
+    line-height: 16px;
+}

@@ -1,0 +1,51 @@
+.data-table th , .data-table td {
+    border-collapse: collapse;
+  }
+
+.data-table td {
+    color: #333333;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    border-bottom: 1px solid #000;
+    padding: 13px 0 13px 40px;
+}
+.editBtn{
+  cursor: pointer;
+}
+.saveBtn{
+  cursor: pointer;
+  height: 36px;
+    width: 74px;
+    border-radius: 20px;
+    background-color: #157BF9;
+    border: none;
+    outline: transparent;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    
+}
+.stock-input{
+  height: 36px;
+  width:104px;
+  border-radius: 20px;
+  outline-style: none;
+  background-color: #F3F3F3;
+  border-color: transparent;
+  padding-left: 10px;
+  font-size: 14px;
+  color:#333333;
+  margin-right: 9px;
+  
+}
+ .unlimited-checkbox{
+  height: 18px;
+  width:18px;
+} 
+.checkbox-wrapper{
+/* display: inline-flex;
+  margin-top:50px; */
+}
